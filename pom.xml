@@ -9,7 +9,7 @@
 	</parent>
 
 	<groupId>ng.kennie.rest</groupId>
-	<artifactId>model-poc</artifactId>
+	<artifactId>rest-model</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
