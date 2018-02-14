@@ -1,0 +1,34 @@
+buildscript {
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.10.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+group = 'ng.kennie.rest'
+version = '0.0.1-SNAPSHOT'
+
+description = """
+	Kennie NG testing rest API in Spring Boot
+"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator'
+    compile group: 'com.google.code.gson', name: 'gson'
+    
+    testCompile group: 'junit', name: 'junit'
+    testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test') {
+		exclude(module: 'commons-logging')
+    }
+}
