@@ -26,6 +26,9 @@ dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web'
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator'
     compile group: 'com.google.code.gson', name: 'gson'
+	compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
+	compile group: 'org.apache.commons', name: 'commons-collections4', version: '4.1'
+
     
     testCompile group: 'junit', name: 'junit'
     testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test') {
