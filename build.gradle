@@ -32,3 +32,8 @@ dependencies {
 		exclude(module: 'commons-logging')
     }
 }
+
+repository {
+	mavenLocal()
+	mavenCentral()
+}
